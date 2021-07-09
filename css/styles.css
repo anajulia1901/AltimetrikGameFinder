@@ -22,3 +22,33 @@
     position: absolute;
     border-radius: 0px 10px 10px 0px;
 }
+.GameFinder{
+    position: absolute;
+    
+}
+.Form{
+    height: 52px;
+    width: 330px;
+    left: 330px;
+    top: 300px;
+    border-radius: 8px;
+    position: absolute;
+    box-sizing: border-box;
+    
+}
+.titulo{
+    position: absolute;
+    height: 61px;
+    left: 23.33%;
+    right: 54.58%;
+    top: calc(50% - 61px/2 - 267.5px);
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: 2.8px;
+
+    color: #FFFFFF;
+}
