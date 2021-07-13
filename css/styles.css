@@ -8,22 +8,6 @@
     background: linear-gradient(180deg, #7CD235 0%, #2BB34F 100%);
     position:absolute;
 }
-.login{
-    background-color:  #141414;
-    height: 1024px;
-    width: 1440px;
-    border-radius: 0px;
-    position: absolute;
-}
-.InformacionUsuario{
-    height: 660px;
-    width: 630px;
-    margin-left: 180px;
-    margin-top: 180px;
-    background: #303030;  
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
-    border-radius: 10px 0px 0px 10px;
-}
 .BiomutantImg {
     position: absolute;
     width: 453px;
@@ -33,54 +17,6 @@
     
     background: #D8D8D8;
     border-radius: 0px 10px 10px 0px;
-}
-.GameFinder{
-    position: absolute;
-    
-}
-.Form{
-    height: 52px;
-    width: 330px;
-    left: 330px;
-    top: 300px;
-    border-radius: 8px;
-    position: absolute;
-    box-sizing: border-box;
-    
-}
-.titulo{
-    position: absolute;
-    height: 61px;
-    left: 23.33%;
-    right: 54.58%;
-    top: calc(50% - 61px/2 - 267.5px);
-
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 45px;
-    line-height: 61px;
-    letter-spacing: 2.8px;
-
-    color: #FFFFFF;
-}
-.fa-user-circle{
-    color:#FFFFFF;
-    width: 25px;
-
-}
-.fa-eye{
-    color:#FFFFFF;
-}
-.Form2{
-    height: 52px;
-    width: 330px;
-    left: 330px;
-    top: 372px;
-    border-radius: 8px;
-    position: absolute;
-    box-sizing: border-box;
-    
 }
 .Check-box{
     height: 20px;
@@ -108,25 +44,70 @@
     line-height: 19px;
     color: #8F8F8F;
 }
-.Register-now{
-    height: 19px;
-    width: 100px;
-    margin-left: 150px;
-    margin-top: 331px;
-    margin-bottom: 310px;
-    border-radius: nullpx;
-    position: absolute;
-    color: #FFFFFF;
+.Facebook{
+    height: 40px;
+    width: 250px;
+    left: 195px;
+    top: 437px;
+    border-radius: 8px;
+    
 }
-.Password{
-    height: 19px;
-    width: 200px;
-    margin-left: 364px;
-    margin-top: 331px;
-    margin-bottom: 310px;
-    border-radius: nullpx;
+.fa-eye{
+    color:#FFFFFF;
+}
+.fa-user-circle{
+    color:#FFFFFF;
+    width: 25px;
+
+}
+.Form{
+    height: 52px;
+    width: 330px;
+    left: 330px;
+    top: 300px;
+    border-radius: 8px;
     position: absolute;
-    color: #FFFFFF;
+    box-sizing: border-box;
+    
+}
+.Form2{
+    height: 52px;
+    width: 330px;
+    left: 330px;
+    top: 372px;
+    border-radius: 8px;
+    position: absolute;
+    box-sizing: border-box;
+    
+}
+
+.Google{
+    height: 40px;
+    left: 195px;
+    Width :255px;
+    top: 481px;
+    border-radius: 8px;
+}
+.login{
+    background-color:  #141414;
+    height: 1024px;
+    width: 1440px;
+    border-radius: 0px;
+    position: absolute;
+}
+.InformacionUsuario{
+    height: 660px;
+    width: 630px;
+    margin-left: 180px;
+    margin-top: 180px;
+    background: #303030;  
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.GameFinder{
+    position: absolute;
+    
 }
 .hr1{
     height: 2px;
@@ -147,38 +128,6 @@
     color:#FFFFFF;
    
 }
-.Or{
-    height: 19px;
-    width: 61px;
-    margin-left: 305px;
-    margin-top: 390px;
-    border-radius: nullpx;
-    color: #FFFFFF;
-    position: absolute;
-}
-
-.Facebook{
-    height: 40px;
-    width: 250px;
-    left: 195px;
-    top: 437px;
-    border-radius: 8px;
-    
-}
-.Twitter{
-    height: 40px;
-    Width :249px;
-    left: 195px;
-    top: 459px;
-    border-radius: 8px;
-}
-.Google{
-    height: 40px;
-    left: 195px;
-    Width :255px;
-    top: 481px;
-    border-radius: 8px;
-}
 .input-group-text-without-border{
     border: 0;
 
@@ -190,3 +139,56 @@
     border-left:0;
     
 }
+.Or{
+    height: 19px;
+    width: 61px;
+    margin-left: 305px;
+    margin-top: 390px;
+    border-radius: nullpx;
+    color: #FFFFFF;
+    position: absolute;
+}
+.Password{
+    height: 19px;
+    width: 200px;
+    margin-left: 364px;
+    margin-top: 331px;
+    margin-bottom: 310px;
+    border-radius: nullpx;
+    position: absolute;
+    color: #FFFFFF;
+}
+.Register-now{
+    height: 19px;
+    width: 100px;
+    margin-left: 150px;
+    margin-top: 331px;
+    margin-bottom: 310px;
+    border-radius: nullpx;
+    position: absolute;
+    color: #FFFFFF;
+}
+.titulo{
+    position: absolute;
+    height: 61px;
+    left: 23.33%;
+    right: 54.58%;
+    top: calc(50% - 61px/2 - 267.5px);
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: 2.8px;
+
+    color: #FFFFFF;
+}
+.Twitter{
+    height: 40px;
+    Width :249px;
+    left: 195px;
+    top: 459px;
+    border-radius: 8px;
+}
+
