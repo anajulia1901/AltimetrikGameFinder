@@ -1,0 +1,30 @@
+.main{
+    background-color:  #141414;
+    height: 1024px;
+    width: 1440px;
+    border-radius: 0px;
+    position: absolute;
+
+}
+.Nav-bar{
+    height: 120px;
+    width: 1440px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background: linear-gradient(180deg, #7CD235 0%, #2BB34F 100%);
+    position: absolute;
+}
+.Titulo{
+color: #FFFFFF;
+width: 198px;
+height: 38px;
+left: 39px;
+top: calc(50% - 38px/2 - 459px);
+
+font-weight: normal;
+font-size: 28px;
+line-height: 38px;
+letter-spacing: 1.74222px;
+
+}
