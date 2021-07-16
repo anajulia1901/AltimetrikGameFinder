@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/all.css'>
     <link rel='stylesheet' href='css/styles.css'>
     <title>Main View</title>
 </head>
@@ -12,13 +14,39 @@
 <div class="main">
     <nav class=" Nav-bar navbar navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand">Navbar</a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <span class="Titulo  mb-0 h1">GAME<strong>FINDER </strong></span>
+          <form class=" Search d-flex">
+            <i class="fas fa-search Search-icon "></i>
+            <input class=" Search1 form-control me-2 bg-transparent border-0" type="search" placeholder="Type game name or console" aria-label="Search">
+            <div class="logout"><p>Logout </p><i class="fas fa-sign-out-alt"></i>
+              </div>
+              <div class="hr1">
+                <hr>
+            </div>
           </form>
         </div>
       </nav>
+      <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <!-- Sidebar - Brand -->
+          <a class="sidebar-brand d-flex align-items-center justify-content-center">
+              <div class=" home sidebar-brand-text mx-3">Home</div>
+          </a>
+          <li class="review nav-item">
+              <span>Reviews</span>
+          </li>
+          
+          <!-- Nav Item - Pages Collapse Menu -->
+          <li class="new-releases nav-item ">
+              <span>New Releases</span>
+              
+          </li>
+          <li class="nav-item ">
+              
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span>Exercises</span>
+          </li>
+           
+      </ul>
 </div>
 </body>
 </html>
