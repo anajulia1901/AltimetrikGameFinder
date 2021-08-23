@@ -1,3 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #141414;
+}
+.coming-soon{
+    height: 30px;
+    width: 158px;
+    left: 39px;
+    top: 380px;
+    margin-bottom: 10%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color:#FFFFFF;
+     
+}
+.best-of-the-year{
+    height: 30px;
+    width: 200px;
+    left: 39px;
+    top: 547px;
+    border-radius: nullpx;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color:#FFFFFF;
+     
+}
 .fa-search{
     color: #A6A6A6;
     
@@ -6,111 +41,192 @@
     left: 60px;
     top: 6px;
     border-radius: nullpx;
-    position: absolute;
+     
     color: #F1F1F1;
     
 }
-
+.rectangle1{
+    height: 314px;
+    border-radius: 10px;
+    background: #303030;
+    border-radius: 10px;
+    padding:0;
+}
+.rectangle2{
+    height: 314px;
+    width: 430px;
+    top: 602px;
+    border-radius: 10px;
+    background: #303030;
+    margin-left: 250px;
+    margin-top: 5%;
+}
+.rectangle3{
+        height: 314px;
+        width: 430px;
+        left: 263px;
+        top: 602px;
+        border-radius: 10px;
+        background: #303030;
+        margin-left: 690px;
+        margin-top: -314px;
+}
+.rectangle4{
+    height: 314px;
+    width: 430px;
+    left: 263px;
+    top: 602px;
+    border-radius: 10px;
+    background: #303030;
+    margin-left: 690px;
+    margin-top: -314px;
+}
+.rectangle5{
+    height: 314px;
+    width: 430px;
+    left: 263px;
+    top: 602px;
+    border-radius: 10px;
+    background: #303030;
+    margin-left: 1130px;
+    margin-top: -314px;  
+}
+.rectangle6{
+    height: 314px;
+    width: 430px;
+    border-radius: 10px;
+    background: #303030;
+    margin-left: 440px;
+    margin-top: -245px; 
+}
 .main{
     background-color:  #141414;
-    height: 1024px;
-    width: 1440px;
+    height: 100%;
+    width: 100%;
     border-radius: 0px;
-    position: absolute;
+     
 
 }
 .logout{
     height: 22px;
-    width: 240px;
-    left: 650px;
-    top: 13px;
     border-radius: nullpx;
-    position: absolute;
+    align-self: flex-end;
+    justify-self: flex-end;
     color: #F1F1F1;
+    text-align: right;
+    margin-right:50px;
     
+}
+.last-searches{
+    height: 30px;
+    width: 200px;
+    left: 39px;
+    top: 506px;
+    margin-bottom: 4%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    color:#FFFFFF;
+     
+}
+.lupa{
+    color:white;
+    
+
 }
 .Nav-bar{
     height: 120px;
-    width: 1440px;
+    width: 100%;
     left: 0px;
     top: 0px;
     border-radius: 0px;
     background: linear-gradient(180deg, #7CD235 0%, #2BB34F 100%);
-    position: absolute;
+     
 }
 .new-releases{
     height: 30px;
     width: 158px;
     left: 39px;
     top: 235px;
-    border-radius: nullpx;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 800;
     font-size: 22px;
     color:#FFFFFF;
-    position: absolute;
+    margin-bottom: 20%;
+     
 
 
 }
 .home{
     height: 30px;
     width: 67px;
-    left: 25px;
     top: 153px;
-    border-radius: nullpx;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 800;
     font-size: 22px;
-    position: absolute;
     color: #7CD235;
+    margin-bottom: 5%;
+    margin-left: 0;
+}
+.popular{
+    height: 30px;
+    width: 95px;
+    left: 39px;
+    top: 443px;
+    margin-bottom: 4%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    color:#FFFFFF;
+     
+
 }
 .review{
     height: 30px;
     width: 95px;
     left: 39px;
     top: 194px;
-    border-radius: nullpx;
-    border-radius: nullpx;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 800;
     font-size: 22px;
     color:#FFFFFF;
-    position: absolute;
+    position: static;
+    margin-bottom: 5%;
+     
 
 }
 
 .Search{
     height: 40px;
-    width: 362px;
+    width: 360px;
     border-radius: 20px;
-    margin-top: 32px;
-    margin-left: 539px;
-    margin-right: 539px;
-    margin-bottom: 48px;
+    align-self: center;
     background: #F1F1F1;
     border-radius: 20px;
-    position: absolute;
+    margin: 0 auto;
+    position:relative;
+    
 }
 .Search1{
     height: 22px;
-    width: 240px;
-    left: 61px;
-    top: 9px;
+    width: 100%;
     border-radius: nullpx;
-    position: absolute;
+    text-align: center;
     color: #A6A6A6;
     background: #F1F1F1;
+    padding-top: 10px;
    }
 .Search-icon{
     height: 16px;
-    width: 240px;
+    
     left: 20px;
     top: 13px;
-    border-radius: nullpx;
-    position: absolute;
+    position:absolute;
     color: #A6A6A6;
     background: #F1F1F1;
 }
@@ -119,20 +235,85 @@
     color: #FFFFFF;
     width: 198px;
     height: 38px;
-    left: 39px;
-    top: calc(50% - 38px/2 - 459px);
-    height: 38px;
-    width: 198px;
-    left: 39px;
-    top: 34px;
     border-radius: nullpx;
-    position: absolute;
-
     font-weight: normal;
     font-size: 28px;
     line-height: 38px;
     letter-spacing: 1.74222px;
 
+}
+.this-week{
+    height: 30px;
+    width: 158px;
+    left: 39px;
+    top: 298px;
+    margin-bottom: 4%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color:#FFFFFF;
+     
+}
+.this-month{
+    height: 30px;
+    width: 158px;
+    left: 39px;
+    top: 339px;
+    margin-bottom: 4%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color:#FFFFFF;
+     
+}
+.title,.subtitle{
+    height: 75px;
+    width: 511px;
+    left: 262px;
+    top: 144px;
+    font-family: Open Sans;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: 0px;
+    margin-left: 262px;
+    text-align: left;
+    color:#FFFFFF;
+     
+
+}
+.subtitle{
+    height: 25px;
+    width: 511px;
+    padding-top:10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+  
+
+}
+.photo1{
+    height: 217,3;
+    width: 100%;
+    left: 263px;
+    right:814px;
+    top: 264px;
+    border-radius: 0px;
+    bottom:542,7px;
+}
+.photo2{
+    height: 217,3;
+    width: 100%;
+    left: 263px;
+    right:814px;
+    top: 264px;
+    border-radius: 0px;
+    bottom:542,7px;
+}
 }
 .hr1{
     
@@ -142,4 +323,43 @@
     border-radius: 0px;
     color: #FFFFFF;
     position:fixed;
+}
+
+.card-container1{
+    margin-top:100px;
+    margin-left: 260px;
+    margin-right:40px;
+}
+/* .card-container2{
+    margin-top:200px;
+    margin-left: 260px;
+    margin-right:40px;
+} */
+.header-container{
+    background-color: #7CD235;
+    height: 120px;
+    
+}
+.header-gamefinder{
+align-items: center;
+justify-content: space-between;
+
+}
+.header-flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+    align-content: space-around;
+   
+}
+.line{
+    height: 2px;
+    background-color: #FFFFFF;
+    width: 97%;
+    
+}
+#accordionSidebar{
+    position: absolute;
+    margin-left: 3%;
 }
