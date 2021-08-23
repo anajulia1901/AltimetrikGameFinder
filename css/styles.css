@@ -45,13 +45,24 @@ body{
     color: #F1F1F1;
     
 }
+.first-row{
+    margin-left: 250px;
+}
 .rectangle1{
-    height: 314px;
+    /* height: 314px;
     border-radius: 10px;
     background: #303030;
     border-radius: 10px;
-    padding:0;
+    padding:0; */
+    height: 314px;
+    width: 430px;
+    top: 602px;
+    border-radius: 10px;
+    background: #303030;
+    margin-top: 5%;
 }
+
+
 .rectangle2{
     height: 314px;
     width: 430px;
@@ -97,7 +108,7 @@ body{
     border-radius: 10px;
     background: #303030;
     margin-left: 440px;
-    margin-top: -245px; 
+    margin-top: -245px;  
 }
 .main{
     background-color:  #141414;
