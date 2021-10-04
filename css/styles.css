@@ -397,7 +397,7 @@ line-height: 25px;
 }
 .exitIcon {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 500px;
 }
 .modal-title {
@@ -407,7 +407,7 @@ line-height: 25px;
   font-size: 60px;
   line-height: 82px;
   color: #ffffff;
-  width: 300px;
+  width: 700px;
 }
 .ranking {
   grid-column: 1;
@@ -456,15 +456,18 @@ line-height: 25px;
   width: 392px;
   height: 217px;
   background-color: rgb(234, 236, 230);
+  margin-left: -170px
 }
 .mini-img-style {
   height: 104px;
   width: 184px;
   background-color: rgb(225, 226, 223);
+  margin-left: -170px
 }
 .mini-img-style-two {
   width: 184px;
   background-color: rgb(225, 226, 223);
+  margin-left: -170px
 }
 .button-buy {
   display: flex;
@@ -522,14 +525,14 @@ line-height: 25px;
   margin-top: 13px;
 }
 .modal-description-text {
-  width: 460px;
   color: #ffffff;
   font-size: 14px;
   line-height: 19px;
   width: 350px;
-  height: 200px;
+  height: 170px;
   margin-bottom: 0px;
   margin-top: -250px;
+  overflow: auto;
 }
 .button-community {
   display: flex;
@@ -582,6 +585,7 @@ line-height: 25px;
   row-gap: 10px;
   column-gap: 50px;
   margin-top: -170px;
+  margin-left: -235px;
 }
 .aditional-info-text {
   font-weight: 300;
@@ -622,4 +626,13 @@ line-height: 25px;
     font-size: 25px;
   }
   
- 
+.modalOutsideContainer{
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  font-family: Open Sans;
+}
