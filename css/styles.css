@@ -71,11 +71,6 @@ strong {
   place-items: center stretch;
   padding: 10px;
 }
-.userIcon{
-    color:#FFFFFF;
-    width: 25px;
-
-}
 .box-login input {
   margin: 0px;
   height: 52px;
@@ -111,6 +106,8 @@ strong {
 }
 .userIcon{
     color: #d1d1d1; 
+    margin-top: 15px;
+    margin-left: 15px;
 }
 .eye {
   width: 20px;
@@ -124,15 +121,10 @@ strong {
   box-sizing: border-box;
   border-left: none;
 }
-
-.user-circle {
-  padding: 15px;
-  height: 20px;
-  width: 20px;
-}
 .key {
   height: 9px;
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .text-bottom {
