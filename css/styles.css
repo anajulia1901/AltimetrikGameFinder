@@ -72,8 +72,8 @@ i{
   font-size: 14px;
   line-height: 19px;
   font-weight: 400px; 
-  font-family: 'Open Sans';
-  padding-right: 10px;
+  font-family: "Open Sans";
+  padding-right :50px;
 }
 .profilePic{
   width: 43.87px;
@@ -117,7 +117,7 @@ i{
   list-style: none;
 }
 .reviewSidebar{
-  font-family: 'Open Sans';
+  font-family:"Open Sans" ;
   font-size: 22px;
   font-style: normal;
   font-weight: 800;
@@ -129,7 +129,7 @@ i{
 }
 .newreleasesSidebar{
   color: #FFFFFF;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 22px;
   font-style: normal;
   font-weight: 800;
@@ -139,7 +139,7 @@ i{
   list-style: none;
 }
 .thisweekSidebar{
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -150,7 +150,7 @@ i{
   color: #ffffff;
 }
 .thismonthSidebar{
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -161,7 +161,7 @@ i{
   color: #ffffff;  
 }
 .comingsoonSidebar{
-  font-family: Open Sans;
+  font-family:"Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -172,7 +172,7 @@ i{
   color: #ffffff; 
 }
 .popularSidebar{
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 22px;
@@ -181,7 +181,7 @@ i{
   list-style: none;
 }
 .lastsearchesSidebar{
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: normal;
@@ -193,7 +193,7 @@ i{
   width: 150px;
 }
 .bestoftheyearSidebar{
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -209,7 +209,7 @@ i{
   margin-right: 40px;
   height: 100%;
   width: 100%;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 20px;
   padding-left: 50px;
   padding-right: 50px
@@ -349,7 +349,7 @@ line-height: 25px;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.784937);
-  font-family: Open Sans;
+  font-family: "Open Sans";
 }
 .modalSelectedOK{
   display: flex; 
@@ -361,7 +361,7 @@ line-height: 25px;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.784937);
-  font-family: Open Sans;
+  font-family: "Open Sans";
 }
 .modalContainer{
   position: fixed;
@@ -634,5 +634,5 @@ line-height: 25px;
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
-  font-family: Open Sans;
+  font-family: "Open Sans";
 }
