@@ -1,5 +1,5 @@
-*{
-    font-family: "Open Sans";
+* {
+  font-family: "Open Sans";
 }
 html,
 body {
@@ -17,7 +17,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .loginContainer {
   display: flex;
   width: 1083px;
@@ -58,7 +57,7 @@ h1 {
 strong {
   font-weight: 800;
 }
-.boxLeft{
+.boxLeft {
   background-color: #303030;
   border-radius: 10px 0px 0px 10px;
   box-shadow: 0px 0px 50px 0px #0000001a;
@@ -104,16 +103,24 @@ strong {
   border-radius: 8px 0px 0px 8px;
   color: #d1d1d1;
 }
-.userIcon{
-    color: #d1d1d1; 
-    margin-top: 15px;
-    margin-left: 15px;
+.userIcon {
+  color: #d1d1d1;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 .eye {
   width: 20px;
   height: 13.75px;
 }
-.icon-eye {
+.iconeye {
+  padding: 15px;
+  height: 52px;
+  border: 1px solid #8f8f8f;
+  border-radius: 0px 8px 8px 0px;
+  box-sizing: border-box;
+  border-left: none;
+}
+.iconeye2 {
   padding: 15px;
   height: 52px;
   border: 1px solid #8f8f8f;
@@ -126,7 +133,12 @@ strong {
   margin-top: 15px;
   margin-left: 15px;
 }
-
+.error{
+  background: transparent;
+  font-size: 14px;
+  line-height: 19px;
+  color: red;
+}
 .text-bottom {
   display: flex;
   align-content: center;
@@ -574,4 +586,4 @@ body{
     .BiomutantImg{
         display: none;
     }
-  } */ 
+  } */
