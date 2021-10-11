@@ -35,6 +35,7 @@ console.log ("hola")
       }
       else{
           document.querySelector("#result").style.color="red";
+          
       }
   }
   
