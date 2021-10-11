@@ -12,31 +12,43 @@ function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
-/* function validatePassword(password) {
-    const $result = $("#result");
-    const email = $("#email").val();
-    $result.text("");
-  
-    if (validateEmail(email)) {
-      $result.text(email + " is valid :)");
-      $result.css("color", "green");
-    } else {
-      $result.text(email + " is not valid :(");
-      $result.css("color", "red");
+function validatePassword(password) {
+    if (password.length >3 && password.length < 20){
+    return true;
     }
-    return false;
-  } */
-  function Login(){
+} 
+  
+async function Login(){
       let email = document.querySelector("#result").value;
       let password = document.querySelector("#loginpassword").value;
      
       if (validateEmail(email) && validatePassword(password)) {
-console.log ("hola")
+          let dbJasonServer = await fetch ("http://localhost:3000/users", {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: `${email}`,
+              password: `${password}`,
+            }),
+          })
+console.log (dbJasonServer)
+let dbJasonResults = dbJasonServer.json()
+if (dbJasonResults.status === 201|| 200){
+    window.location = "main.html";
+}
       }
       else{
           document.querySelector("#result").style.color="red";
-          
+
       }
+      if (validatePassword(password)) {
+              }
+              else{
+                  document.querySelector("#loginpassword").style.color="red";
+                  
+              }
   }
   
-/* passwordtiene que preguntar si es mayor a 3 y menor a 20 */
