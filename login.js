@@ -51,4 +51,9 @@ if (dbJasonResults.status === 201|| 200){
                   
               }
   }
-  
+ 
+let carouselPosition = 0;  
+const carousel = document.getElementsByClassName("carouselImage");
+function carouselShow(position){
+    
+}
