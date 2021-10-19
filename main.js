@@ -14,7 +14,7 @@ fetch("https://api.rawg.io/api/games?key=a6b177c4bf7e429c91a64c0f6d30398c")
   .then((data) => {
     console.log(data);
     cardMultiplication(data);
-  });
+  }); 
 
 function showGenres(gamesInfo) {
   let genre = gamesInfo.genres;
