@@ -55,5 +55,8 @@ if (dbJasonResults.status === 201|| 200){
 let carouselPosition = 0;  
 const carousel = document.getElementsByClassName("carouselImage");
 function carouselShow(position){
-    
+    carousel[carouselPosition].classList.remove("carouselImageShow");
+    console.log(carousel[position])
+    carousel[position].classList.add("carouselImageShow");
+    carouselPosition= position;
 }
