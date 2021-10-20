@@ -241,13 +241,23 @@ function cardConsols(cardInfo) {
   }
   return consols;
 }
-
+///GridToColumn
+GridToColumn()
+function GridToColumn(){
+document.querySelector(`.columnButton`).addEventListener("click",columnClick);
+document.querySelector(`.gridButton`).addEventListener("click",gridClick);
+}
+function columnClick(){
+  document.querySelector(".videogameCards").classList.add("videogameCardsColumn");
+}
+function gridClick(){
+  document.querySelector(".videogameCards").classList.remove("videogameCardsColumn");
+}
 ///ONCLICKModal
 async function functionModal(id) {
   console.log(id);
   let modal = document.querySelector(`.modalSelected`);
   modal.style.display = "flex";
-  // modal.classList.toggle(`modalSelectedOK`)
   let allInfoGamesModal = document.querySelectorAll(`.one`);
 
   let modalReleaseDates;
