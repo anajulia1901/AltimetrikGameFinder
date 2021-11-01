@@ -58,6 +58,7 @@ i {
   border-color: transparent;
   width: 300px;
   display: flex;
+  cursor: pointer;
 }
 .logoutContainer {
   display: flex;
@@ -74,6 +75,7 @@ i {
   font-weight: 400px;
   font-family: "Open Sans";
   padding-right: 50px;
+  cursor: pointer;
 }
 .profilePic {
   width: 43.87px;
@@ -82,8 +84,7 @@ i {
   display: flex;
   align-items: center;
 }
-.line1 {
-  height: 2px;
+.line {
   background-color: #ffffff;
   width: 90%;
   height: 1px;
@@ -204,7 +205,6 @@ i {
   color: #ffffff;
   width: 200px;
 }
-/* ////CARDS//// */
 .cards-container {
   margin-right: 40px;
   height: 100%;
@@ -218,6 +218,12 @@ i {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.gridButton{
+cursor: pointer;
+}
+.columnButton{
+  cursor: pointer;
 }
 .titles {
   justify-items: flex-end;
@@ -249,12 +255,21 @@ i {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(363px, 1fr));
+  cursor: pointer;
 }
 .videogameCardsColumn {
   display: flex;
   gap: 24px;
   align-items: center;
   flex-direction: column;
+}
+.cardColumn{
+  height: 538px;
+  width: 696px;
+  left: 492px;
+  top: 278px;
+  border-radius: 10px;
+  
 }
 .one {
   grid-column: 1;
@@ -264,6 +279,13 @@ i {
   border-radius: 10px;
   background: #303030;
 }
+.one1 {
+  height: 538px;
+  width: 696px;
+  left: 492px;
+  top: 278px;
+  border-radius: 10px;
+}
 .photo1 {
   height: 200px;
   width: 363px;
@@ -272,9 +294,24 @@ i {
   border-radius: 0px;
   border-radius: 10px 10px 0px 0px;
 }
+.photo1Column{
+  height: 260px;
+  width: 100%;
+  left: 491px;
+  top: 278px;
+  border-radius: 0px;
+}
 .titlePlataformContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px
+}
+.titlePlataformContainerColumn {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .gameTitle {
   text-overflow: ellipsis;
@@ -300,6 +337,11 @@ i {
   width: 186px;
   height: 46px;
 }
+.infoContainerColumn {
+  width: 600px;
+  display: flex;
+  margin-left:20px;
+} 
 .textContainer {
   display: flex;
   justify-content: space-between;
@@ -314,10 +356,26 @@ i {
   font-size: 12px;
   margin-left: 20px;
 }
-.line {
+.line1 {
   width: 186px;
-  border: 1px solid #3d3d3d;
+  height: 1px;
+  background:#3d3d3d;
   margin-left: 20px;
+}
+.line2 {
+  width: 186px;
+  height: 1px;
+  background:#3d3d3d;
+  margin-left: 20px;
+}
+.lineColumn1 {
+  display: none;
+}
+.lineColumn2 {
+  display: none;
+}
+.number-gif{
+  display:flex;
 }
 .gameNumber {
   font-weight: bold;
@@ -410,6 +468,7 @@ i {
   display: flex;
   justify-content: center;
   width: 500px;
+  cursor: pointer;
 }
 .modal-title {
   margin-top: -10px;
@@ -627,8 +686,6 @@ i {
 .no-line {
   text-decoration: none;
 }
-
-/* ///termina// */
 .date-container {
   width: 186px;
   height: 46px;
@@ -671,4 +728,26 @@ i {
   width: 12px;
   display: inline;
   color: #ffffff;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.desriptionHidden{
+  color: #ffffff;
+  font-size: 15px;
+  display: none;
+  width: 90%;
+  padding-left: 40px;
+  height: 160px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: gray;
+}
+.descriptionShow{
+  display:block;
 }

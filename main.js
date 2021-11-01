@@ -1,7 +1,9 @@
 const apiKey = `a6b177c4bf7e429c91a64c0f6d30398c`;
 const url = `https://api.rawg.io/api/games`;
 var nextpageurl;
-var contador = 0;
+var counter= 0;
+var loaderPage = true;
+var globalId = [];
 window.addEventListener("load", starting);
 function starting() {
   document.querySelector("#search").addEventListener("click", searchGame);
@@ -14,7 +16,8 @@ fetch("https://api.rawg.io/api/games?key=a6b177c4bf7e429c91a64c0f6d30398c")
   .then((data) => {
     console.log(data);
     cardMultiplication(data);
-  }); 
+    initializationInfiniteScroll();
+  });
 
 function showGenres(gamesInfo) {
   let genre = gamesInfo.genres;
@@ -35,7 +38,7 @@ function cardMultiplication(cardInformation) {
     let card = `<div class= "videogames">
         <div class="videogameCards">
             <div class="one" onclick=functionModal(${allInfo.id})>
-                <div class="photo1">
+                <div class="photoContainer">
                     <img class="photo1" id="photo" src= '${
                       allInfo.background_image
                     }' >
@@ -54,14 +57,12 @@ function cardMultiplication(cardInformation) {
                                   allInfo.released
                                 }</p>
                             </div>
-                            <div class="line"></div>
+                            <div class="line1"></div>
                                 <div class="textContainer">
                                     <p class="text-grid">Genres</p>
-                                    <p class="genre text-grid">${showGenres(
-                                      allInfo
-                                    )}</p>
+                                    <p class="genre text-grid">${showGenres(allInfo)}</p>
                                 </div>
-                            <div class="line"></div>
+                            <div class="line2 "></div>
                             </div>
                             <div class="number-gif">
                                 <p class="gameNumber">#${i + 1}</p>
@@ -74,12 +75,23 @@ function cardMultiplication(cardInformation) {
                             </div> 
                         </div>
                     </div>
+                    <div class="desriptionHidden"></div>
                 </div>
             </div>
         </div>
      </div> `;
     document.querySelector(".videogameCards").innerHTML += card;
+    globalId.push (allInfo.id);
   }
+  descriptionText(globalId);
+}
+async function descriptionText(id){
+  const descriptionContainer = document.querySelectorAll(".desriptionHidden")
+  for (let i=0; i<descriptionContainer.length; i++){
+  let informationDescriptionCard = await getInformationApi(id[i]);
+  descriptionContainer[i].innerHTML += informationDescriptionCard.description_raw;
+  
+}
 }
 function cardConsols(cardInfo) {
   let consols = "";
@@ -242,17 +254,57 @@ function cardConsols(cardInfo) {
   return consols;
 }
 ///GridToColumn
-GridToColumn()
-function GridToColumn(){
-document.querySelector(`.columnButton`).addEventListener("click",columnClick);
-document.querySelector(`.gridButton`).addEventListener("click",gridClick);
+
+GridToColumn();
+function GridToColumn() {
+  document
+    .querySelector(".columnButton")
+    .addEventListener("click", columnClick);
+  document.querySelector(".gridButton").addEventListener("click", gridClick);
 }
-function columnClick(){
+function columnClick() {
   document.querySelector(".videogameCards").classList.add("videogameCardsColumn");
+  let cardContainer = document.querySelectorAll(".one");
+  let cardContainerImg = document.querySelectorAll(".photo1");
+  let cardContainerTitle = document.querySelectorAll(".titlePlataformContainer");
+  let cardContainerInfo = document.querySelectorAll(".infoContainer");
+  let cardContainerLine1 = document.querySelectorAll(".line1");
+  let cardContainerLine2 = document.querySelectorAll(".line2");
+  
+  for (let i = 0; i < cardContainer.length; i++) {
+    document.querySelectorAll(".desriptionHidden")[i].classList.add("descriptionShow");
+    cardContainer[i].classList.add("one1");
+    cardContainerImg[i].classList.add("photo1Column");
+    cardContainerTitle[i].classList.add("titlePlataformContainerColumn");
+    cardContainerInfo[i].classList.add("infoContainerColumn");
+    cardContainerLine1[i].classList.add("lineColumn1");
+    cardContainerLine2[i].classList.add("lineColumn2");
+    
+    
+    
+  }
 }
-function gridClick(){
-  document.querySelector(".videogameCards").classList.remove("videogameCardsColumn");
-}
+
+  function gridClick() {
+    document.querySelector(".videogameCards").classList.remove("videogameCardsColumn");
+      let cardContainer = document.querySelectorAll(".one");
+      let cardContainerImg = document.querySelectorAll(".photo1");
+      let cardContainerTitle = document.querySelectorAll(".titlePlataformContainer");
+      let cardContainerInfo = document.querySelectorAll(".infoContainer");
+      let cardContainerLine1 = document.querySelectorAll(".line1");
+      let cardContainerLine2 = document.querySelectorAll(".line2");
+      
+      for (let i = 0; i < cardContainer.length; i++) {
+        document.querySelectorAll(".desriptionHidden")[i].classList.remove("descriptionShow");
+        cardContainer[i].classList.remove("one1");
+        cardContainerImg[i].classList.remove("photo1Column");
+        cardContainerTitle[i].classList.remove("titlePlataformContainerColumn");
+        cardContainerInfo[i].classList.remove("infoContainerColumn");
+        cardContainerLine1[i].classList.remove("lineColumn1");
+        cardContainerLine2[i].classList.remove("lineColumn2");
+      }
+  }
+
 ///ONCLICKModal
 async function functionModal(id) {
   console.log(id);
@@ -271,8 +323,7 @@ async function functionModal(id) {
       console.log(allInfoGamesModal);
       modalImage = allInfoGamesModal[j].querySelector("#photo").currentSrc;
       modalTitle = allInfoGamesModal[j].querySelector(".gameTitle").textContent;
-      modalReleaseDates =
-        allInfoGamesModal[j].querySelector(".date").textContent;
+      modalReleaseDates =allInfoGamesModal[j].querySelector(".date").textContent;
       modalGenres = allInfoGamesModal[j].querySelector(".genre").textContent;
       modalTop = allInfoGamesModal[j].querySelector(".gameNumber").textContent;
     }
@@ -286,8 +337,7 @@ async function functionModal(id) {
 
   const newInfoApi = await getInformationApi(id);
   document.querySelector(".modalIcons").innerHTML = modalConsols(newInfoApi);
-  document.querySelector(".modal-description-text").innerHTML =
-    newInfoApi.description_raw;
+  document.querySelector(".modal-description-text").innerHTML =newInfoApi.description_raw;
   const apiImgScreenshots = await getScreenshot(newInfoApi.slug);
 
   let platforms = getPlatforms(newInfoApi.parent_platforms);
@@ -491,7 +541,7 @@ async function getInformationApi(id) {
   const fetchData = await fetch(
     `https://api.rawg.io/api/games/${id}?key=a6b177c4bf7e429c91a64c0f6d30398c`
   );
-  const modalDescription = fetchData.json();
+  const modalDescription = await fetchData.json();
   return modalDescription;
 }
 
@@ -535,8 +585,8 @@ async function fetchSearch(input) {
     let allInfo = inputData.results[i];
     let card = `<div class= "videogames">
     <div class="videogameCards">
-        <div class="one" onclick=functionModal(${allInfo.id})>
-            <div class="photo1">
+        <div class="one cardGrid" onclick=functionModal(${allInfo.id})>
+            <div class="photoContainer">
                 <img class="photo1" id="photo" src= '${
                   allInfo.background_image
                 }' >
@@ -558,15 +608,15 @@ async function fetchSearch(input) {
                         <div class="textContainer">
                             <p class="release text-grid">Release date</p>
                             <p class="date text-grid">${allInfo.released}</p>
+                            <div class="line "></div>
                         </div>
-                        <div class="line"></div>
-                            <div class="textContainer">
+                            <div class="textContainer ">
                                 <p class="text-grid">Genres</p>
                                 <p class="genre text-grid">${showGenres(
                                   allInfo
                                 )}</p>
+                                <div class="line "></div>
                             </div>
-                        <div class="line"></div>
                         </div>
                         <div class="number-gif">
                             <p class="gameNumber">#${i + 1}</p>
@@ -586,24 +636,28 @@ async function fetchSearch(input) {
     document.querySelector(".videogameCards").innerHTML += card;
   }
 }
-window.addEventListener("scroll", () => {
-  if (
-    window.scrollY + 1 + window.innerHeight >=
-    document.documentElement.scrollHeight
-  ) {
-    infiniteScroll(nextpageurl);
-  }
-});
+
+function initializationInfiniteScroll(){
+  window.addEventListener("scroll", () => {
+    if (
+      window.scrollY + 1 + window.innerHeight >=
+      document.documentElement.scrollHeight && loaderPage=== true
+    ) {
+      infiniteScroll(nextpageurl);
+    }
+  });
+}
 async function infiniteScroll(pageScroll) {
-  let fetchPage = await fetch(`${pageScroll}`);
+  loaderPage= false;
+  let fetchPage = await fetch (pageScroll);
   let fetchPageInfo = await fetchPage.json();
-  contador += 20;
+  counter += 20;
   for (let i = 0; i < fetchPageInfo.results.length; i++) {
     let allInfo = fetchPageInfo.results[i];
     let card = `<div class= "videogames">
         <div class="videogameCards">
             <div class="one" onclick=functionModal(${allInfo.id})>
-                <div class="photo1">
+                <div class="photoContainer">
                     <img class="photo1" id="photo" src= '${
                       allInfo.background_image
                     }' >
@@ -628,17 +682,16 @@ async function infiniteScroll(pageScroll) {
                                   allInfo.released
                                 }</p>
                             </div>
-                            <div class="line"></div>
+
                                 <div class="textContainer">
                                     <p class="text-grid">Genres</p>
                                     <p class="genre text-grid">${showGenres(
                                       allInfo
                                     )}</p>
                                 </div>
-                            <div class="line"></div>
                             </div>
                             <div class="number-gif">
-                                <p class="gameNumber">#${contador + i + 1}</p>
+                                <p class="gameNumber">#${counter + i + 1}</p>
                                 <button class='card-interact-button' id="main-card">
                                 <div class="gift"><span class="plus">+</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 2.5C3 1.11929 4.11929 0 5.5 0C6.88071 0 8 1.11929 8 2.5C8 1.11929 9.11929 0 10.5 0C11.8807 0 13 1.11929 13 2.5V2.506C13 2.576 13 2.776 12.962 3H15C15.5523 3 16 3.44772 16 4V5C16 5.55228 15.5523 6 15 6H1C0.447715 6 0 5.55228 0 5V4C0 3.44772 0.447715 3 1 3H3.038C3.01159 2.83668 2.99888 2.67144 3 2.506V2.5ZM4.068 3H7V2.5C7 1.9641 6.7141 1.46891 6.25 1.20096C5.7859 0.933013 5.2141 0.933013 4.75 1.20096C4.2859 1.46891 4 1.9641 4 2.5C4 2.585 4.002 2.774 4.045 2.93C4.05101 2.95385 4.05869 2.97724 4.068 3ZM11.932 3H9V2.5C9 1.67157 9.67157 1 10.5 1C11.3284 1 12 1.67157 12 2.5C12 2.585 11.998 2.774 11.955 2.93C11.9489 2.95381 11.9412 2.9772 11.932 3ZM15 7V14.5C15 15.3284 14.3284 16 13.5 16H9V7H15ZM1 14.5C1 15.3284 1.67157 16 2.5 16H7V7H1V14.5Z" fill="white"/>
@@ -656,4 +709,5 @@ async function infiniteScroll(pageScroll) {
   }
   nextpageurl = fetchPageInfo.next;
   console.log(nextpageurl);
+  loaderPage= true;
 }

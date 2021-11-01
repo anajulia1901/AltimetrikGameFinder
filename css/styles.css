@@ -102,6 +102,7 @@ strong {
   box-sizing: border-box;
   border-radius: 8px 0px 0px 8px;
   color: #d1d1d1;
+  cursor: pointer;
 }
 .userIcon {
   color: #d1d1d1;
@@ -119,6 +120,7 @@ strong {
   border-radius: 0px 8px 8px 0px;
   box-sizing: border-box;
   border-left: none;
+  cursor: pointer;
 }
 .iconeye2 {
   padding: 15px;
@@ -170,6 +172,7 @@ strong {
   width: 20px;
   height: 20px;
   border-radius: 4px;
+  cursor: pointer;
 }
 input[type="checkbox"]:checked {
   background: #7cd235;
@@ -243,7 +246,9 @@ input[type="checkbox"]:checked {
 .social-media {
   text-align: center;
 }
-
+.loginButton{
+  cursor: pointer;
+}
 .button {
   height: 40px;
   padding: 10px;
@@ -255,6 +260,7 @@ input[type="checkbox"]:checked {
   line-height: 16px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
 i {
   color: #ffffff;
@@ -270,15 +276,19 @@ i {
 .button {
   border-radius: 0px 8px 8px 0px;
   border-color: transparent;
+  cursor: pointer;
 }
 .fecebook-icon {
   background: #263c68;
+  cursor: pointer;
 }
 .twitter-icon {
   background: #0695cb;
+  cursor: pointer;
 }
 .google-icon {
   background: #9d9d9d;
+  cursor: pointer;
 }
 .face {
   background: #3b5998;
@@ -346,6 +356,7 @@ i {
   }
   .column {
     justify-content: center;
+    cursor: pointer;
   }
   .column input[type="submit"] {
     margin-left: 12px;
@@ -360,6 +371,7 @@ i {
   }
   .box-login input {
     width: 188px;
+    cursor: pointer;
   }
   .box-login input[class="password-input"] {
     width: 138px;
