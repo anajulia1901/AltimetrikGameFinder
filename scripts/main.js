@@ -253,10 +253,9 @@ function cardConsols(cardInfo) {
   }
   return consols;
 }
-///GridToColumn
-
-GridToColumn();
-function GridToColumn() {
+///gridToColumn
+gridToColumn();
+function gridToColumn() {
   document
     .querySelector(".columnButton")
     .addEventListener("click", columnClick);

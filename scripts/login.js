@@ -2,11 +2,11 @@ function visiblePassword() {
   var visible = document.getElementById("loginpassword");
   if (visible.type == "password") {
     visible.type = "text";
-    document.querySelector(".iconeye").innerHTML ='<i class= "fas fa-eye-slash"></i>';
+    document.querySelector(".icon-eye").innerHTML ='<i class= "fas fa-eye-slash"></i>';
     return;
   }
   visible.type = "password";
-  document.querySelector(".iconeye").innerHTML = '<i class= "fas fa-eye"></i>';
+  document.querySelector(".icon-eye").innerHTML = '<i class= "fas fa-eye"></i>';
 }
 function validateEmail(email) {
   const re =
@@ -50,10 +50,10 @@ async function Login() {
 }
 
 let carouselPosition = 0;
-const carousel = document.getElementsByClassName("carouselImage");
+const carousel = document.getElementsByClassName("carousel-image");
 function carouselShow(position) {
-  carousel[carouselPosition].classList.remove("carouselImageShow");
+  carousel[carouselPosition].classList.remove("carousel-image-show");
   console.log(carousel[position]);
-  carousel[position].classList.add("carouselImageShow");
+  carousel[position].classList.add("carousel-image-show");
   carouselPosition = position;
 }
