@@ -25,7 +25,7 @@ i {
   align-items: center;
   height: 91px;
 }
-.gameFinder {
+.game-finder {
   height: 38px;
   width: 198px;
   color: #ffffff;
@@ -36,13 +36,13 @@ i {
   text-align: left;
   padding-left: 20px;
 }
-.searchContainer {
+.search-container {
   display: flex;
   height: 40px;
   width: 362px;
   border-radius: 20px;
 }
-.searchIcon {
+.search-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,7 @@ i {
   padding: 20px;
   height: 0px;
 }
-.searchInput {
+.search-input {
   background-color: #f1f1f1;
   border-radius: 0px 50px 50px 0px;
   border-color: transparent;
@@ -60,13 +60,13 @@ i {
   display: flex;
   cursor: pointer;
 }
-.logoutContainer {
+.logout-container {
   display: flex;
   align-items: center;
   height: 19px;
   font-size: 22px;
 }
-.logoutInput {
+.logout-input {
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -77,7 +77,7 @@ i {
   padding-right: 50px;
   cursor: pointer;
 }
-.profilePic {
+.profile-pic {
   width: 43.87px;
   height: 45.33px;
   border-radius: 100%;
@@ -94,7 +94,7 @@ i {
   position: static;
 }
 /* ////MAIN//// */
-.mainView {
+.main-view {
   width: 100%;
   height: 100%;
   display: flex;
@@ -102,7 +102,7 @@ i {
 .sidebar {
   width: 190px;
 }
-.homeSidebar {
+.home-sidebar {
   height: 30px;
   width: 67px;
   text-decoration: none;
@@ -117,7 +117,7 @@ i {
   margin-top: 33px;
   list-style: none;
 }
-.reviewSidebar {
+.review-sidebar {
   font-family: "Open Sans";
   font-size: 22px;
   font-style: normal;
@@ -128,7 +128,7 @@ i {
   color: #ffffff;
   list-style: none;
 }
-.newreleasesSidebar {
+.newreleases-sidebar {
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 22px;
@@ -139,7 +139,7 @@ i {
   text-align: left;
   list-style: none;
 }
-.thisweekSidebar {
+.thisweek-sidebar {
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
@@ -150,7 +150,7 @@ i {
   list-style: none;
   color: #ffffff;
 }
-.thismonthSidebar {
+.thismonth-sidebar {
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
@@ -161,7 +161,7 @@ i {
   list-style: none;
   color: #ffffff;
 }
-.comingsoonSidebar {
+.comingsoon-sidebar {
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
@@ -172,7 +172,7 @@ i {
   list-style: none;
   color: #ffffff;
 }
-.popularSidebar {
+.popular-sidebar {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
@@ -181,7 +181,7 @@ i {
   color: #ffffff;
   list-style: none;
 }
-.lastsearchesSidebar {
+.lastsearches-sidebar {
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
@@ -193,7 +193,7 @@ i {
   list-style: none;
   width: 150px;
 }
-.bestoftheyearSidebar {
+.bestoftheyear-sidebar {
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
@@ -214,33 +214,33 @@ i {
   padding-left: 50px;
   padding-right: 50px;
 }
-.titleCardsContainer {
+.title-cards-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.gridButton{
+.grid-button{
 cursor: pointer;
 }
-.columnButton{
+.column-button{
   cursor: pointer;
 }
 .titles {
   justify-items: flex-end;
 }
-#title1Cards {
+#title1-cards {
   color: #ffffff;
   font-size: 55px;
   line-height: 75px;
   margin-top: 20px;
   margin-bottom: 0%;
 }
-.title2Cards {
+.title2-cards {
   color: #ffffff;
   font-size: 18px;
   line-height: 25px;
 }
-.iconCards {
+.icon-cards {
   display: flex;
   align-items: center;
 }
@@ -251,19 +251,19 @@ cursor: pointer;
   display: grid;
   gap: 24px;
 }
-.videogameCards {
+.videogame-cards {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(363px, 1fr));
   cursor: pointer;
 }
-.videogameCardsColumn {
+.videogame-cards-column {
   display: flex;
   gap: 24px;
   align-items: center;
   flex-direction: column;
 }
-.cardColumn{
+.card-column{
   height: 538px;
   width: 696px;
   left: 492px;
@@ -294,26 +294,26 @@ cursor: pointer;
   border-radius: 0px;
   border-radius: 10px 10px 0px 0px;
 }
-.photo1Column{
+.photo1-column{
   height: 260px;
   width: 100%;
   left: 491px;
   top: 278px;
   border-radius: 0px;
 }
-.titlePlataformContainer {
+.title-plataform-container {
   display: flex;
   justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px
 }
-.titlePlataformContainerColumn {
+.title-plataform-container-column {
   display: flex;
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
 }
-.gameTitle {
+.game-title {
   text-overflow: ellipsis;
   text-align: left;
   color: #ffffff;
@@ -324,7 +324,7 @@ cursor: pointer;
   margin-bottom: 0px;
   font-family: "Open Sans";
 }
-.plataformsIcons {
+.plataforms-icons {
   width: 70px;
   text-align: right;
 }
@@ -333,16 +333,16 @@ cursor: pointer;
   justify-content: space-between;
   height: 100%;
 }
-.infoContainer {
+.info-container {
   width: 186px;
   height: 46px;
 }
-.infoContainerColumn {
+.info-container-column {
   width: 600px;
   display: flex;
   margin-left:20px;
 } 
-.textContainer {
+.text-container {
   display: flex;
   justify-content: space-between;
   overflow:hidden;
@@ -368,16 +368,16 @@ cursor: pointer;
   background:#3d3d3d;
   margin-left: 20px;
 }
-.lineColumn1 {
+.line-column1 {
   display: none;
 }
-.lineColumn2 {
+.line-column2 {
   display: none;
 }
 .number-gif{
   display:flex;
 }
-.gameNumber {
+.game-number {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -403,7 +403,7 @@ cursor: pointer;
   font-weight: 400;
 }
 /* ////MODAL//// */
-.modalSelected {
+.modal-selected {
   display: none;
   z-index: 2;
   position: fixed;
@@ -415,7 +415,7 @@ cursor: pointer;
   background: rgba(0, 0, 0, 0.784937);
   font-family: "Open Sans";
 }
-.modalSelectedOK {
+.modal-selectedOK {
   display: flex;
   z-index: 2;
   position: fixed;
@@ -427,7 +427,7 @@ cursor: pointer;
   background: rgba(0, 0, 0, 0.784937);
   font-family: "Open Sans";
 }
-.modalContainer {
+.modal-container {
   position: fixed;
   z-index: 2;
   top: 50%;
@@ -436,13 +436,13 @@ cursor: pointer;
   width: 1082px;
   height: 770px;
 }
-.modalImg {
+.modal-img {
   width: 100%;
   height: 80%;
   z-index: -1;
   position: absolute;
 }
-.modalBox {
+.modal-box {
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -461,10 +461,10 @@ cursor: pointer;
   margin-left: 79px;
   margin-bottom: 65px;
 }
-.modalIcons {
+.modal-icons {
   width: 100px;
 }
-.exitIcon {
+.exit-icon {
   display: flex;
   justify-content: center;
   width: 500px;
@@ -641,7 +641,7 @@ cursor: pointer;
   justify-content: center;
   justify-items: center;
 }
-.commentIconModal {
+.comment-icon-modal {
   margin-top: 28px;
   margin-left: -20px;
 }
@@ -695,7 +695,7 @@ cursor: pointer;
   width: 16px;
   margin-left: 21px;
 }
-.commentIcon {
+.comment-icon {
   display: flex;
   line-height: 16px;
   text-align: right;
@@ -705,7 +705,7 @@ cursor: pointer;
   font-size: 25px;
 }
 
-.modalOutsideContainer {
+.modal-outside-container {
   z-index: 2;
   position: fixed;
   top: 50%;
@@ -731,7 +731,7 @@ cursor: pointer;
   margin-left: 0px;
   margin-right: 0px;
 }
-.desriptionHidden{
+.desription-hidden{
   color: #ffffff;
   font-size: 15px;
   display: none;
@@ -748,6 +748,6 @@ cursor: pointer;
   border-radius: 10px;
   background-color: gray;
 }
-.descriptionShow{
+.description-show{
   display:block;
 }

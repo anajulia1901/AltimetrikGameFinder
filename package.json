@@ -1,5 +1,5 @@
 {
-  "name": "altimetrikgamefinder",
+  "name": "altimetrikgame-finder",
   "version": "1.0.0",
   "description": "",
   "main": "login.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anajulia1901/AltimetrikGameFinder.git"
+    "url": "git+https://github.com/anajulia1901/Altimetrikgame-finder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anajulia1901/AltimetrikGameFinder/issues"
+    "url": "https://github.com/anajulia1901/Altimetrikgame-finder/issues"
   },
-  "homepage": "https://github.com/anajulia1901/AltimetrikGameFinder#readme",
+  "homepage": "https://github.com/anajulia1901/Altimetrikgame-finder#readme",
   "devDependencies": {
     "json-server": "^0.17.0",
     "json-server-auth": "^2.1.0"
