@@ -17,7 +17,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.loginContainer {
+.login-container {
   display: flex;
   width: 1083px;
   height: 660px;
@@ -57,7 +57,7 @@ h1 {
 strong {
   font-weight: 800;
 }
-.boxLeft {
+.box-left {
   background-color: #303030;
   border-radius: 10px 0px 0px 10px;
   box-shadow: 0px 0px 50px 0px #0000001a;
@@ -102,8 +102,9 @@ strong {
   box-sizing: border-box;
   border-radius: 8px 0px 0px 8px;
   color: #d1d1d1;
+  cursor: pointer;
 }
-.userIcon {
+.user-icon {
   color: #d1d1d1;
   margin-top: 15px;
   margin-left: 15px;
@@ -112,15 +113,16 @@ strong {
   width: 20px;
   height: 13.75px;
 }
-.iconeye {
+.icon-eye {
   padding: 15px;
   height: 52px;
   border: 1px solid #8f8f8f;
   border-radius: 0px 8px 8px 0px;
   box-sizing: border-box;
   border-left: none;
+  cursor: pointer;
 }
-.iconeye2 {
+.icon-eye2 {
   padding: 15px;
   height: 52px;
   border: 1px solid #8f8f8f;
@@ -170,6 +172,7 @@ strong {
   width: 20px;
   height: 20px;
   border-radius: 4px;
+  cursor: pointer;
 }
 input[type="checkbox"]:checked {
   background: #7cd235;
@@ -192,7 +195,7 @@ input[type="checkbox"]:checked {
   color: #ffffff;
   text-decoration: none;
 }
-.text-bottom input[value="LOGIN"] {
+.login-button{
   width: 100px;
   height: 40px;
   border-color: transparent;
@@ -243,7 +246,9 @@ input[type="checkbox"]:checked {
 .social-media {
   text-align: center;
 }
-
+.login-button{
+  cursor: pointer;
+}
 .button {
   height: 40px;
   padding: 10px;
@@ -255,6 +260,7 @@ input[type="checkbox"]:checked {
   line-height: 16px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
 i {
   color: #ffffff;
@@ -270,15 +276,19 @@ i {
 .button {
   border-radius: 0px 8px 8px 0px;
   border-color: transparent;
+  cursor: pointer;
 }
 .fecebook-icon {
   background: #263c68;
+  cursor: pointer;
 }
 .twitter-icon {
   background: #0695cb;
+  cursor: pointer;
 }
 .google-icon {
   background: #9d9d9d;
+  cursor: pointer;
 }
 .face {
   background: #3b5998;
@@ -319,7 +329,7 @@ i {
 .carousel-dot {
   cursor: pointer;
   appearance: none;
-  background-image: url(/style/image-icons/dot.svg);
+  background-image: url(images/dot.png);
   width: 7px;
   height: 7px;
   opacity: 0.3;
@@ -331,7 +341,16 @@ i {
 .carousel-dot:checked {
   opacity: 1;
 }
-
+@media screen and (max-width: 1100px) {
+  .carousel {
+    display:none;
+  }
+  .login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}
 @media screen and (max-width: 1439px) {
   html,
   body {
@@ -343,9 +362,10 @@ i {
     height: 48px;
     line-height: 48px;
     font-size: 35px;
-  }
+  } 
   .column {
     justify-content: center;
+    cursor: pointer;
   }
   .column input[type="submit"] {
     margin-left: 12px;
@@ -360,6 +380,7 @@ i {
   }
   .box-login input {
     width: 188px;
+    cursor: pointer;
   }
   .box-login input[class="password-input"] {
     width: 138px;
@@ -374,7 +395,7 @@ i {
 .result {
   display: flex;
 }
-.carouselDots{
+.carousel-dots{
   display: flex;
   position: absolute;
   left: 175px;
@@ -393,19 +414,19 @@ i {
   height: 660px;
   overflow: hidden;
 }
-.carouselContainer{
+.carousel-container{
   position: relative;
   height: 100%;
   transition: transform 250ms ease-in;
   background-image: url(images/dot.png);
 }
-.carouselImage {
+.carousel-image {
   display:none;
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 0 10px 10px 0;
 }
-.carouselImageShow{
+.carousel-image-show{
   display: block;
 }
