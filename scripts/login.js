@@ -2,7 +2,8 @@ function visiblePassword() {
   var visible = document.getElementById("loginpassword");
   if (visible.type == "password") {
     visible.type = "text";
-    document.querySelector(".icon-eye").innerHTML ='<i class= "fas fa-eye-slash"></i>';
+    document.querySelector(".icon-eye").innerHTML =
+      '<i class= "fas fa-eye-slash"></i>';
     return;
   }
   visible.type = "password";
@@ -20,6 +21,7 @@ function validatePassword(password) {
 }
 
 async function Login() {
+  console.log ("test")
   let email = document.querySelector("#result").value;
   let password = document.querySelector("#loginpassword").value;
 

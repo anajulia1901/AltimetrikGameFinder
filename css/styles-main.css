@@ -15,7 +15,6 @@ i {
   font-size: 14px;
   margin-right: 5px;
 }
-/* ////HEADER//// */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -304,14 +303,28 @@ cursor: pointer;
 .title-plataform-container {
   display: flex;
   justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px
+  margin-left: 40px;
+  height: 30px;
+  width: 285px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title-plataform-container-dots {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  height: 30px;
+  width: 285px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .title-plataform-container-column {
   display: flex;
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
+  width: 89%;
+  margin-left: 40px;
 }
 .game-title {
   text-overflow: ellipsis;
@@ -332,6 +345,7 @@ cursor: pointer;
   display: flex;
   justify-content: space-between;
   height: 100%;
+  padding-left: 20px;
 }
 .info-container {
   width: 186px;
@@ -740,6 +754,7 @@ cursor: pointer;
   height: 160px;
   overflow: hidden;
   overflow-y: scroll;
+  padding-top: 10px;
 }
 ::-webkit-scrollbar {
   width: 7px;

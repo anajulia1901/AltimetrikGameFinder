@@ -9,6 +9,11 @@
       "email": "anajulia@gmail.com",
       "password": "$2a$10$oNq1e3W25.UM/5mssUOXcevmSGHuDlSnDd1/sElpzoiqGGekJoneq",
       "id": 2
+    },
+    {
+      "email": "anajulia@gmail.comf",
+      "password": "$2a$10$v12fViYlULCRr2QowEV2wO0XRoawMeaRwpzZFnTbtOhB3nELZ3Msu",
+      "id": 3
     }
   ]
 }
